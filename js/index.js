@@ -92,3 +92,13 @@ function allTotal() {
   const totalSum = subtotalAmountConvert + taxConvert;
   document.getElementById("allTotal").innerText = totalSum;
 }
+
+const closing = document.getElementById("closed1");
+closing.addEventListener("click", function () {
+  document.getElementById("cartItem1").style.display = "none";
+});
+
+const hideItem = document.getElementById("closed2");
+hideItem.addEventListener("click", function () {
+  document.getElementById("cartItem2").style.display = "none";
+});
